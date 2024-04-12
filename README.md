@@ -22,12 +22,9 @@ Before use them, kindly replace the git repo URL in the scripts with your own gi
 (1) upload.sh - for Mac and Linux users
     in this repo directory, run the following command in the terminal:
 
-    ```bash
     bash upload.sh
-    ```
+
 (2) win-upload.bat - for Windows users
     in this repo directory, run the following command in the terminal:
 
-    ```bash
     ./win-upload.bat
-    ```
