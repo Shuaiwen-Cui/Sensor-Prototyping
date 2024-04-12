@@ -15,7 +15,7 @@ Use KEIL v5 to open the project file - "/BASELINE-NO-RTOS/MDK-ARM/STM32H723.upro
 
 ## UPLOAD TO YOUR OWN GIT REPO
 
-Two scripts were included in this repo to facilitate the upload of the project to your own git repo. 
+Two scripts were included in this repo to facilitate the uploading of the project to your own git repo. 
 
 Before use them, kindly replace the git repo URL in the scripts with your own git repo URL. Details can be found in the scripts themselves.
 
