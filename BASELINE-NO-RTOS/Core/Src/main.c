@@ -377,7 +377,7 @@ int main(void)
 	EventRecorderInitialize(EventRecordAll, 1); // initialize and start Event Recorder
 #endif
 
-	// <II CMSIS NN TEST>
+	// <III CMSIS NN TEST>
 	printf("\r\n[PART III: CMSIS NN TEST - CNN FOR IMAGE CLASSIFICATION]\r\n");
 	printf("start execution\n");
 	/* start the execution */

@@ -9,6 +9,14 @@ enter the folder you want to clone the repo to, and run the following command in
 git clone https://github.com/Shuaiwen-Cui/Sensor-Prototyping.git
 ```
 
+## BRANCHES
+
+- **BASELINE-NO-RTOS**: the basic version, all three examples available with this version
+- **BASELINE-NO-RTOS-NEW-NNLIB**: compared to the basic version, the NN lib is updated, but NN examples are not compatible, so only the first two examples are available in this version
+- **BASELINE-NO-RTOS-SUDDEN-DAMAGE-DETECTION**: under construction, not available yet.
+
+note: for a stable version, use the **BASELINE-NO-RTOS** branch.
+
 ## HOW TO USE THIS REPO
 
 Use KEIL v5 to open the project file - "/BASELINE-NO-RTOS/MDK-ARM/STM32H723.uprojx", then click "Build" to compile the project, and click "Download" to download the program to the STM32H723ZGT6 board. In this repo, the dev kit is FK723M1-ZGT6 from FANKE TECHNOLOGY.
