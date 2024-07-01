@@ -125,11 +125,11 @@ int main(void)
   void *ptr1 = memory_alloc(1 * 1024 * 1024); // allocate 10 MB
   if (ptr1)
   {
-    printf("Allocated 10 MB at %p\n", ptr1);
+    printf("Allocated 10 MB at %p\r\n", ptr1);
   }
   else
   {
-    printf("Failed to allocate 10 MB\n");
+    printf("Failed to allocate 10 MB\r\n");
   }
 
   // modify the values in the allocated memory
@@ -139,12 +139,12 @@ int main(void)
     // print
     if (i % 4096 == 0)
     {
-      printf("Value at %p: %d\n", &((uint32_t *)ptr1)[i], ((uint32_t *)ptr1)[i]);
+      printf("Value at %p: %d\r\n", &((uint32_t *)ptr1)[i], ((uint32_t *)ptr1)[i]);
     }
   }
 
   memory_free(ptr1);
-  MCU_printf("Freed memory at %p\n", ptr1);
+  printf("Freed memory at %p\r\n", ptr1);
 
   // <SD CARD TEST>
   printf("\r\n[PART II: SD CARD TEST]\r\n");
@@ -152,11 +152,11 @@ int main(void)
   if (Disk_Mount() < 0)
   {
     Error_Handler();
-    printf("SD CARD TEST failed!");
+    printf("SD CARD TEST failed!\r\n");
   }
   else
   {
-    printf("SD CARD TEST succeeded!");
+    printf("SD CARD TEST succeeded!\r\n");
   }
 
   HAL_SD_CardInfoTypeDef SDCardInfo;
